@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Node.jsの準備
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Use Node.js v20
         uses: actions/setup-node@v3
         with:
@@ -54,4 +54,4 @@ jobs:
           path: './out/'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
